@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Commander un produit - SEN BIO</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .confirmation {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #d4edda;
+      color: #155724;
+      padding: 2rem;
+      border-radius: 8px;
+      border: 1px solid #c3e6cb;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      font-size: 1.2rem;
+      font-weight: bold;
+      z-index: 1000;
+      text-align: center;
+    }
+
+    .commande-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .commande-form label {
+      font-weight: 600;
+    }
+
+    .commande-form input,
+    .commande-form select,
+    .commande-form textarea {
+      padding: 0.6rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <img src="SEN BIO.png" alt="Logo SEN BIO" class="logo" />
+      <h1>SEN BIO</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="Produit.html">Produits</a></li>
+        <li><a href="A propos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2>Formulaire de commande</h2>
+      <p>Veuillez remplir ce formulaire pour passer votre commande.</p>
+
+      <form id="commandeForm" class="commande-form">
+
+        <label for="nom">Nom complet :</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="telephone">Téléphone :</label>
+        <input type="tel" id="telephone" name="telephone" required placeholder="+221 77 123 45 67">
+
+        <label for="produit">Produit :</label>
+        <select id="produit" name="produit" required>
+          <option value="">-- Sélectionnez un produit --</option>
+          <option value="Mangue">Mangue</option>
+          <option value="Mil">Mil</option>
+          <option value="Jus de Bissap">Jus de Bissap</option>
+          <option value="Farine de Mil">Farine de Mil</option>
+          <option value="Tomate">Tomate</option>
+          <option value="Niébé">Niébé</option>
+          <option value="Carotte">Carotte</option>
+          <option value="Feuilles de Bissap">Feuilles de Bissap</option>
+          <option value="Pomme de Terre">Pomme de Terre</option>
+          <option value="Oignon">Oignon</option>
+          <option value="Banane">Banane</option>
+          <option value="Haricot Vert">Haricot Vert</option>
+        </select>
+
+        <label for="quantite">Quantité (en Kg ou en unités) :</label>
+        <input type="number" id="quantite" name="quantite" min="1" required>
+
+        <label for="adresse">Adresse de livraison :</label>
+        <textarea id="adresse" name="adresse" rows="3" required></textarea>
+
+        <button type="submit" class="btn">Envoyer la commande</button>
+      </form>
+
+      <!-- Message de confirmation centré -->
+      <div id="confirmationMessage" class="confirmation">
+        ✅ Commande envoyée avec succès !
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 SEN BIO. Tous droits réservés.</p>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    const form = document.getElementById("commandeForm");
+    const confirmation = document.getElementById("confirmationMessage");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // Empêche l'envoi
+
+      // Masquer le formulaire
+      form.style.display = "none";
+
+      // Afficher le message au milieu de l'écran
+      confirmation.style.display = "block";
+
+      // (Facultatif) Recharger la page après 5 secondes :
+      // setTimeout(() => window.location.reload(), 5000);
+    });
+  </script>
+
+</body>
+</html>

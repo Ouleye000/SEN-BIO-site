@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>À propos - SEN BIO</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .section img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
+    .produits-physiques {
+      margin-top: 3rem;
+    }
+
+    .produits-physiques h3 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #4CAF50;
+    }
+
+    .produits-physiques .items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .produits-physiques .item {
+      max-width: 280px;
+      text-align: center;
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .produits-physiques .item img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .avis-clients {
+      background-color: #f9f9f9;
+      padding: 2rem;
+      border-radius: 8px;
+      margin-top: 4rem;
+    }
+
+    .avis-clients h3 {
+      color: #4CAF50;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .avis {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .avis .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 1rem;
+      max-width: 280px;
+      text-align: center;
+    }
+
+    .avis .card img {
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      margin-bottom: 0.5rem;
+    }
+
+    .stars {
+      color: gold;
+      margin: 0.5rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SEN BIO</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="Produit.html">Produits</a></li>
+        <li><a href="A propos.html" class="active">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2>À propos de SEN BIO</h2>
+      <p>
+        <strong>SEN BIO</strong> est une entreprise sénégalaise engagée dans la valorisation des produits biologiques et locaux.
+        Nous travaillons avec des producteurs du terroir pour proposer des aliments sains, durables et accessibles.
+      </p>
+      <img src="clothing.png" alt="Image ferme SEN BIO" width="500" height="500">
+
+      <h3>Nos Produits Dérivés Responsables</h3>
+      <div class="produits-physiques">
+        <div class="items">
+          <div class="item">
+            <img src="-t-shirt-.png" alt="T-shirt SEN BIO">
+            <h4>T-shirts offerts à nos fidèles clients</h4>
+            <p>En remerciement de votre fidélité, nous offrons des T-shirts 100% coton bio floqués SEN BIO à nos clients réguliers. Un geste symbolique pour vous remercier !</p>
+          </div>
+
+          <div class="item">
+            <img src="bottle.png" alt="Bouteille SEN BIO">
+            <h4>Bouteilles SEN BIO</h4>
+            <p>Des bouteilles en verre réutilisables pour nos jus naturels : Bissap, Gingembre, Bouye… Un emballage éco et pratique pour consommer responsable.</p>
+          </div>
+
+          <div class="item">
+            <img src="paper-shopping-bag.png" alt="Sachet papier SEN BIO">
+            <h4>Sachets en papier écologique</h4>
+            <p>Nous remplaçons le plastique par des sachets en papier kraft recyclé pour emballer vos céréales, fruits secs et tisanes. Zéro déchet, 100% local !</p>
+          </div>
+        </div>
+      </div>
+
+      <h3>Notre Engagement</h3>
+      <p>
+        Depuis 2024, SEN BIO œuvre pour une agriculture respectueuse de l’environnement. Nous misons sur des circuits courts,
+        une rémunération équitable des agriculteurs et une qualité nutritionnelle optimale.
+      </p>
+
+      <h3>Nos Valeurs</h3>
+      <ul>
+        <li><strong>🌱 Authenticité :</strong> Des produits purs et enracinés dans le terroir sénégalais.</li>
+        <li><strong>♻️ Écologie :</strong> Des emballages biodégradables et réutilisables.</li>
+        <li><strong>👫 Proximité :</strong> Une relation directe avec nos clients et partenaires locaux.</li>
+      </ul>
+
+      <h3>L’équipe SEN BIO</h3>
+      <p>
+        Derrière chaque produit se cache une équipe passionnée : producteurs, logisticiens, artisans, communicants…
+        Tous unis pour un objectif : faire rayonner le bio sénégalais !
+      </p>
+      <img src="group.jpg" alt="Équipe SEN BIO" width="500" height="500">
+    </section>
+
+    <!-- Section avis clients -->
+    <section class="avis-clients">
+      <h3>Ce que disent nos clients</h3>
+      <div class="avis">
+        <div class="card">
+          <img src="Africaine.jpg" alt="Client 1">
+          <p><strong>Fatou D.</strong></p>
+          <div class="stars">★★★★★</div>
+          <p>J’ai reçu un T-shirt gratuit après ma 4e commande ! En plus les jus sont délicieux.</p>
+        </div>
+
+        <div class="card">
+          <img src="h.jpg" alt="Client 2">
+          <p><strong>Mamadou C.</strong></p>
+          <div class="stars">★★★★☆</div>
+          <p>Les sachets en papier sont solides et pratiques. Merci pour cette initiative écolo !</p>
+        </div>
+
+        <div class="card">
+          <img src="f.jpg" alt="Client 3">
+          <p><strong>Awa K.</strong></p>
+          <div class="stars">★★★★★</div>
+          <p>Une entreprise sérieuse, locale, et engagée. Je recommande SEN BIO à tout le monde !</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 SEN BIO. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
